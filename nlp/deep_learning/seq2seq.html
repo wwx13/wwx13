@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>深度学习 | Vincent^s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/wwx13/assets/css/0.styles.2328f29d.css" as="style"><link rel="preload" href="/wwx13/assets/js/app.5f87f3d6.js" as="script"><link rel="preload" href="/wwx13/assets/js/2.c594a943.js" as="script"><link rel="preload" href="/wwx13/assets/js/23.e772744d.js" as="script"><link rel="prefetch" href="/wwx13/assets/js/10.ec1d9a87.js"><link rel="prefetch" href="/wwx13/assets/js/100.6dd3924c.js"><link rel="prefetch" href="/wwx13/assets/js/101.0797e51c.js"><link rel="prefetch" href="/wwx13/assets/js/102.2627e912.js"><link rel="prefetch" href="/wwx13/assets/js/103.0ff02bff.js"><link rel="prefetch" href="/wwx13/assets/js/104.a2fe8a86.js"><link rel="prefetch" href="/wwx13/assets/js/105.cd1d12b8.js"><link rel="prefetch" href="/wwx13/assets/js/106.cdfed742.js"><link rel="prefetch" href="/wwx13/assets/js/107.1a7b40af.js"><link rel="prefetch" href="/wwx13/assets/js/108.ce5ef96d.js"><link rel="prefetch" href="/wwx13/assets/js/109.71c20038.js"><link rel="prefetch" href="/wwx13/assets/js/11.4a62537e.js"><link rel="prefetch" href="/wwx13/assets/js/110.87289e2b.js"><link rel="prefetch" href="/wwx13/assets/js/111.60814e48.js"><link rel="prefetch" href="/wwx13/assets/js/112.01a952c9.js"><link rel="prefetch" href="/wwx13/assets/js/113.f2c142df.js"><link rel="prefetch" href="/wwx13/assets/js/114.3ff63502.js"><link rel="prefetch" href="/wwx13/assets/js/115.6a843b6e.js"><link rel="prefetch" href="/wwx13/assets/js/116.d98301e0.js"><link rel="prefetch" href="/wwx13/assets/js/117.4611b4b1.js"><link rel="prefetch" href="/wwx13/assets/js/118.2dc979af.js"><link rel="prefetch" href="/wwx13/assets/js/119.6f4f4de8.js"><link rel="prefetch" href="/wwx13/assets/js/12.cc9ad852.js"><link rel="prefetch" href="/wwx13/assets/js/13.a972c8ea.js"><link rel="prefetch" href="/wwx13/assets/js/14.48818404.js"><link rel="prefetch" href="/wwx13/assets/js/15.30b75f93.js"><link rel="prefetch" href="/wwx13/assets/js/16.9c778972.js"><link rel="prefetch" href="/wwx13/assets/js/17.49c7d556.js"><link rel="prefetch" href="/wwx13/assets/js/18.ff2fe358.js"><link rel="prefetch" href="/wwx13/assets/js/19.82bf2432.js"><link rel="prefetch" href="/wwx13/assets/js/20.8139b403.js"><link rel="prefetch" href="/wwx13/assets/js/21.3f1359d8.js"><link rel="prefetch" href="/wwx13/assets/js/22.ce867378.js"><link rel="prefetch" href="/wwx13/assets/js/24.02e90b25.js"><link rel="prefetch" href="/wwx13/assets/js/25.27019d8f.js"><link rel="prefetch" href="/wwx13/assets/js/26.551e853d.js"><link rel="prefetch" href="/wwx13/assets/js/27.e77c7496.js"><link rel="prefetch" href="/wwx13/assets/js/28.db4dbfd7.js"><link rel="prefetch" href="/wwx13/assets/js/29.32157689.js"><link rel="prefetch" href="/wwx13/assets/js/3.ad6b2af0.js"><link rel="prefetch" href="/wwx13/assets/js/30.33820301.js"><link rel="prefetch" href="/wwx13/assets/js/31.d0171516.js"><link rel="prefetch" href="/wwx13/assets/js/32.8e64af5a.js"><link rel="prefetch" href="/wwx13/assets/js/33.54c58a16.js"><link rel="prefetch" href="/wwx13/assets/js/34.2f57efb9.js"><link rel="prefetch" href="/wwx13/assets/js/35.1a534956.js"><link rel="prefetch" href="/wwx13/assets/js/36.b132dac3.js"><link rel="prefetch" href="/wwx13/assets/js/37.a6ad15e2.js"><link rel="prefetch" href="/wwx13/assets/js/38.c6de11d8.js"><link rel="prefetch" href="/wwx13/assets/js/39.27aa33e3.js"><link rel="prefetch" href="/wwx13/assets/js/4.26bed799.js"><link rel="prefetch" href="/wwx13/assets/js/40.3ba36d01.js"><link rel="prefetch" href="/wwx13/assets/js/41.0ef19e64.js"><link rel="prefetch" href="/wwx13/assets/js/42.23902c35.js"><link rel="prefetch" href="/wwx13/assets/js/43.4e9e68bb.js"><link rel="prefetch" href="/wwx13/assets/js/44.743d355c.js"><link rel="prefetch" href="/wwx13/assets/js/45.ab1194dc.js"><link rel="prefetch" href="/wwx13/assets/js/46.86794f77.js"><link rel="prefetch" href="/wwx13/assets/js/47.2cc24490.js"><link rel="prefetch" href="/wwx13/assets/js/48.46698598.js"><link rel="prefetch" href="/wwx13/assets/js/49.605a30fb.js"><link rel="prefetch" href="/wwx13/assets/js/5.6650c683.js"><link rel="prefetch" href="/wwx13/assets/js/50.229d0151.js"><link rel="prefetch" href="/wwx13/assets/js/51.3e3e561b.js"><link rel="prefetch" href="/wwx13/assets/js/52.396d6a37.js"><link rel="prefetch" href="/wwx13/assets/js/53.468afda0.js"><link rel="prefetch" href="/wwx13/assets/js/54.1f8ee031.js"><link rel="prefetch" href="/wwx13/assets/js/55.da39011a.js"><link rel="prefetch" href="/wwx13/assets/js/56.6d79feba.js"><link rel="prefetch" href="/wwx13/assets/js/57.e31cbecd.js"><link rel="prefetch" href="/wwx13/assets/js/58.7f6e43f0.js"><link rel="prefetch" href="/wwx13/assets/js/59.b7085302.js"><link rel="prefetch" href="/wwx13/assets/js/6.876d9396.js"><link rel="prefetch" href="/wwx13/assets/js/60.8843d6d1.js"><link rel="prefetch" href="/wwx13/assets/js/61.8c0267ea.js"><link rel="prefetch" href="/wwx13/assets/js/62.33a32dc2.js"><link rel="prefetch" href="/wwx13/assets/js/63.acf0182c.js"><link rel="prefetch" href="/wwx13/assets/js/64.051bc4f0.js"><link rel="prefetch" href="/wwx13/assets/js/65.8a6e73b5.js"><link rel="prefetch" href="/wwx13/assets/js/66.149a4556.js"><link rel="prefetch" href="/wwx13/assets/js/67.5d38c8d3.js"><link rel="prefetch" href="/wwx13/assets/js/68.88e04af7.js"><link rel="prefetch" href="/wwx13/assets/js/69.a8e378a6.js"><link rel="prefetch" href="/wwx13/assets/js/7.88bb0522.js"><link rel="prefetch" href="/wwx13/assets/js/70.7f8a80b5.js"><link rel="prefetch" href="/wwx13/assets/js/71.18f7da61.js"><link rel="prefetch" href="/wwx13/assets/js/72.6fee7d94.js"><link rel="prefetch" href="/wwx13/assets/js/73.3a264c19.js"><link rel="prefetch" href="/wwx13/assets/js/74.6e1fe6a4.js"><link rel="prefetch" href="/wwx13/assets/js/75.62afc61b.js"><link rel="prefetch" href="/wwx13/assets/js/76.48359efd.js"><link rel="prefetch" href="/wwx13/assets/js/77.e391f3fa.js"><link rel="prefetch" href="/wwx13/assets/js/78.91e51175.js"><link rel="prefetch" href="/wwx13/assets/js/79.40fe0d03.js"><link rel="prefetch" href="/wwx13/assets/js/8.e09cee93.js"><link rel="prefetch" href="/wwx13/assets/js/80.0039dff0.js"><link rel="prefetch" href="/wwx13/assets/js/81.e9d529c0.js"><link rel="prefetch" href="/wwx13/assets/js/82.1094019e.js"><link rel="prefetch" href="/wwx13/assets/js/83.8245350a.js"><link rel="prefetch" href="/wwx13/assets/js/84.3e9495ce.js"><link rel="prefetch" href="/wwx13/assets/js/85.5c3bb05f.js"><link rel="prefetch" href="/wwx13/assets/js/86.43c6e0c7.js"><link rel="prefetch" href="/wwx13/assets/js/87.ddf86b1d.js"><link rel="prefetch" href="/wwx13/assets/js/88.ddca3c8e.js"><link rel="prefetch" href="/wwx13/assets/js/89.18d878bb.js"><link rel="prefetch" href="/wwx13/assets/js/9.4de0dc10.js"><link rel="prefetch" href="/wwx13/assets/js/90.a1e8c5ee.js"><link rel="prefetch" href="/wwx13/assets/js/91.de442e64.js"><link rel="prefetch" href="/wwx13/assets/js/92.49c0824b.js"><link rel="prefetch" href="/wwx13/assets/js/93.6896ca17.js"><link rel="prefetch" href="/wwx13/assets/js/94.d7cc7b7a.js"><link rel="prefetch" href="/wwx13/assets/js/95.bf25d412.js"><link rel="prefetch" href="/wwx13/assets/js/96.147dbe17.js"><link rel="prefetch" href="/wwx13/assets/js/97.e0da221c.js"><link rel="prefetch" href="/wwx13/assets/js/98.c86a38ea.js"><link rel="prefetch" href="/wwx13/assets/js/99.72f4a787.js">
+    <link rel="stylesheet" href="/wwx13/assets/css/0.styles.2328f29d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/wwx13/" class="home-link router-link-active"><!----> <span class="site-name">Vincent^s Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/wwx13/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/wwx13/structure_and_algo/" class="nav-link">
+  数据结构与算法
+</a></div><div class="nav-item"><a href="/wwx13/nlp/" class="nav-link router-link-active">
+  NLP
+</a></div><div class="nav-item"><a href="/wwx13/big_data/" class="nav-link">
+  big data
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数学、统计" class="dropdown-title"><span class="title">数学、统计</span> <span class="arrow down"></span></button> <button type="button" aria-label="数学、统计" class="mobile-dropdown-title"><span class="title">数学、统计</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/wwx13/math/matrix/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-item"><!----> <a href="/wwx13/math/derivate/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-item"><!----> <a href="/wwx13/math/optimization/" class="nav-link">
+  优化理论
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/wwx13/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/wwx13/structure_and_algo/" class="nav-link">
+  数据结构与算法
+</a></div><div class="nav-item"><a href="/wwx13/nlp/" class="nav-link router-link-active">
+  NLP
+</a></div><div class="nav-item"><a href="/wwx13/big_data/" class="nav-link">
+  big data
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数学、统计" class="dropdown-title"><span class="title">数学、统计</span> <span class="arrow down"></span></button> <button type="button" aria-label="数学、统计" class="mobile-dropdown-title"><span class="title">数学、统计</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/wwx13/math/matrix/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-item"><!----> <a href="/wwx13/math/derivate/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-item"><!----> <a href="/wwx13/math/optimization/" class="nav-link">
+  优化理论
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/wwx13/" aria-current="page" class="sidebar-link">Vincet的bolg</a></li><li><a href="/wwx13/nlp/" aria-current="page" class="sidebar-link">自然语言处理</a></li><li><a href="/wwx13/math/matrix/" class="sidebar-link">线性代数</a></li><li><a href="/wwx13/math/derivate/" class="sidebar-link">微积分</a></li><li><a href="/wwx13/structure_and_algo/" class="sidebar-link">数据结构与算法</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="encode-deocde"><a href="#encode-deocde" class="header-anchor">#</a> encode-deocde</h1> <p><img src="/wwx13/assets/img/rnn_seq2seq.70f03318.png" alt="Ane"></p> <h2 id="decode"><a href="#decode" class="header-anchor">#</a> decode</h2> <p><img src="/wwx13/assets/img/decode.8533201c.png" alt="s222"></p> <h2 id="beam-search"><a href="#beam-search" class="header-anchor">#</a> beam search</h2> <p>束搜索（beam search）是对贪婪搜索的⼀个改进算法。它有⼀个束宽（beam size）超参数。我们
+将它设为k 。在时间步1时，选取当前时间步条件概率最⼤的 k个词，分别组成 k个候选输出序列的⾸
+词。在之后的每个时间步，基于上个时间步的 k个候选输出序列，从 k|Y|个可能的输出序列中选取条件
+概率最⼤的 k个，作为该时间步的候选输出序列。最终，我们从各个时间步的候选输出序列中筛选出包
+含特殊符号“<eos>”的序列，并将它们中所有特殊符号“<eos>”后⾯的⼦序列舍弃，得到最终候选输出
+序列的集合。|Y|代表词表。</eos></eos></p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>seq2seq decoder解码当前时刻需要把前一时刻的输出当做输入，确定一个输入才能知道这一个时候的输出<br>
+概率分布，因此，解码没办法使用viterbi这样的算法。使用viterbi必须有最优子结构性质，<br>
+而decoder当前时刻可能因为前一时刻输入变化输出任意一个数值的概率，这个就使得最优子结构不成立了。</p></div> <p><img src="/wwx13/assets/img/beam_search.7677d2b7.png" alt="bm22"> <img src="/wwx13/assets/img/beam_search1.0b49ad2f.png" alt="bm33"></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> operator
+<span class="token keyword">import</span> torch
+<span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn <span class="token keyword">as</span> nn
+<span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn<span class="token punctuation">.</span>functional <span class="token keyword">as</span> F
+<span class="token keyword">from</span> Queue <span class="token keyword">import</span> PriorityQueue
+device <span class="token operator">=</span> torch<span class="token punctuation">.</span>device<span class="token punctuation">(</span><span class="token string">&quot;cuda&quot;</span> <span class="token keyword">if</span> torch<span class="token punctuation">.</span>cuda<span class="token punctuation">.</span>is_available<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">else</span> <span class="token string">&quot;cpu&quot;</span><span class="token punctuation">)</span>
+
+SOS_token <span class="token operator">=</span> <span class="token number">0</span>
+EOS_token <span class="token operator">=</span> <span class="token number">1</span>
+MAX_LENGTH <span class="token operator">=</span> <span class="token number">50</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">DecoderRNN</span><span class="token punctuation">(</span>nn<span class="token punctuation">.</span>Module<span class="token punctuation">)</span><span class="token punctuation">:</span>
+   <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> embedding_size<span class="token punctuation">,</span> hidden_size<span class="token punctuation">,</span> output_size<span class="token punctuation">,</span> cell_type<span class="token punctuation">,</span> dropout<span class="token operator">=</span><span class="token number">0.1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+       <span class="token triple-quoted-string string">'''
+       Illustrative decoder
+       '''</span>
+       <span class="token builtin">super</span><span class="token punctuation">(</span>DecoderRNN<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+       self<span class="token punctuation">.</span>hidden_size <span class="token operator">=</span> hidden_size
+       self<span class="token punctuation">.</span>cell_type <span class="token operator">=</span> cell_type
+       self<span class="token punctuation">.</span>embedding <span class="token operator">=</span> nn<span class="token punctuation">.</span>Embedding<span class="token punctuation">(</span>num_embeddings<span class="token operator">=</span>output_size<span class="token punctuation">,</span>
+                                     embedding_dim<span class="token operator">=</span>embedding_size<span class="token punctuation">,</span>
+                                     <span class="token punctuation">)</span>
+
+       self<span class="token punctuation">.</span>rnn <span class="token operator">=</span> nn<span class="token punctuation">.</span>GRU<span class="token punctuation">(</span>embedding_size<span class="token punctuation">,</span> hidden_size<span class="token punctuation">,</span> bidirectional<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> dropout<span class="token operator">=</span>dropout<span class="token punctuation">,</span> batch_first<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+       self<span class="token punctuation">.</span>dropout_rate <span class="token operator">=</span> dropout
+       self<span class="token punctuation">.</span>out <span class="token operator">=</span> nn<span class="token punctuation">.</span>Linear<span class="token punctuation">(</span>hidden_size<span class="token punctuation">,</span> output_size<span class="token punctuation">)</span>
+
+   <span class="token keyword">def</span> <span class="token function">forward</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token builtin">input</span><span class="token punctuation">,</span> hidden<span class="token punctuation">,</span> not_used<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       embedded <span class="token operator">=</span> self<span class="token punctuation">.</span>embedding<span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">)</span><span class="token punctuation">.</span>transpose<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>  <span class="token comment"># [B,1] -&gt; [ 1, B, D]</span>
+       embedded <span class="token operator">=</span> F<span class="token punctuation">.</span>dropout<span class="token punctuation">(</span>embedded<span class="token punctuation">,</span> self<span class="token punctuation">.</span>dropout_rate<span class="token punctuation">)</span>
+
+       output <span class="token operator">=</span> embedded
+
+       output<span class="token punctuation">,</span> hidden <span class="token operator">=</span> self<span class="token punctuation">.</span>rnn<span class="token punctuation">(</span>output<span class="token punctuation">,</span> hidden<span class="token punctuation">)</span>
+
+       out <span class="token operator">=</span> self<span class="token punctuation">.</span>out<span class="token punctuation">(</span>output<span class="token punctuation">.</span>squeeze<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+       output <span class="token operator">=</span> F<span class="token punctuation">.</span>log_softmax<span class="token punctuation">(</span>out<span class="token punctuation">,</span> dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+       <span class="token keyword">return</span> output<span class="token punctuation">,</span> hidden
+
+
+<span class="token keyword">class</span> <span class="token class-name">BeamSearchNode</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+   <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> hiddenstate<span class="token punctuation">,</span> previousNode<span class="token punctuation">,</span> wordId<span class="token punctuation">,</span> logProb<span class="token punctuation">,</span> length<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       <span class="token triple-quoted-string string">'''
+       :param hiddenstate:
+       :param previousNode:
+       :param wordId:
+       :param logProb:
+       :param length:
+       '''</span>
+       self<span class="token punctuation">.</span>h <span class="token operator">=</span> hiddenstate
+       self<span class="token punctuation">.</span>prevNode <span class="token operator">=</span> previousNode
+       self<span class="token punctuation">.</span>wordid <span class="token operator">=</span> wordId
+       self<span class="token punctuation">.</span>logp <span class="token operator">=</span> logProb
+       self<span class="token punctuation">.</span>leng <span class="token operator">=</span> length
+
+   <span class="token keyword">def</span> <span class="token function">eval</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">1.0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+       reward <span class="token operator">=</span> <span class="token number">0</span>
+       <span class="token comment"># Add here a function for shaping a reward</span>
+
+       <span class="token keyword">return</span> self<span class="token punctuation">.</span>logp <span class="token operator">/</span> <span class="token builtin">float</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>leng <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1e</span><span class="token operator">-</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">+</span> alpha <span class="token operator">*</span> reward
+
+
+decoder <span class="token operator">=</span> DecoderRNN<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">beam_decode</span><span class="token punctuation">(</span>target_tensor<span class="token punctuation">,</span> decoder_hiddens<span class="token punctuation">,</span> encoder_outputs<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+   <span class="token triple-quoted-string string">'''
+   :param target_tensor: target indexes tensor of shape [B, T] where B is the batch size and T is the maximum length of the output sentence
+   :param decoder_hidden: input tensor of shape [1, B, H] for start of the decoding
+   :param encoder_outputs: if you are using attention mechanism you can pass encoder outputs, [T, B, H] where T is the maximum length of input sentence
+   :return: decoded_batch
+   '''</span>
+
+   beam_width <span class="token operator">=</span> <span class="token number">10</span>
+   topk <span class="token operator">=</span> <span class="token number">1</span>  <span class="token comment"># how many sentence do you want to generate</span>
+   decoded_batch <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+   <span class="token comment"># decoding goes sentence by sentence</span>
+   <span class="token keyword">for</span> idx <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>target_tensor<span class="token punctuation">.</span>size<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+       <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>decoder_hiddens<span class="token punctuation">,</span> <span class="token builtin">tuple</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># LSTM case</span>
+           decoder_hidden <span class="token operator">=</span> <span class="token punctuation">(</span>decoder_hiddens<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span>idx<span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>unsqueeze<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>decoder_hiddens<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span>idx<span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>unsqueeze<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+       <span class="token keyword">else</span><span class="token punctuation">:</span>
+           decoder_hidden <span class="token operator">=</span> decoder_hiddens<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> idx<span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>unsqueeze<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+       encoder_output <span class="token operator">=</span> encoder_outputs<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span>idx<span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>unsqueeze<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+       <span class="token comment"># Start with the start of the sentence token</span>
+       decoder_input <span class="token operator">=</span> torch<span class="token punctuation">.</span>LongTensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span>SOS_token<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> device<span class="token operator">=</span>device<span class="token punctuation">)</span>
+
+       <span class="token comment"># Number of sentence to generate</span>
+       endnodes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+       number_required <span class="token operator">=</span> <span class="token builtin">min</span><span class="token punctuation">(</span><span class="token punctuation">(</span>topk <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> topk <span class="token operator">-</span> <span class="token builtin">len</span><span class="token punctuation">(</span>endnodes<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+       <span class="token comment"># starting node -  hidden vector, previous node, word id, logp, length</span>
+       node <span class="token operator">=</span> BeamSearchNode<span class="token punctuation">(</span>decoder_hidden<span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">,</span> decoder_input<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+       nodes <span class="token operator">=</span> PriorityQueue<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+       <span class="token comment"># start the queue</span>
+       nodes<span class="token punctuation">.</span>put<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">-</span>node<span class="token punctuation">.</span><span class="token builtin">eval</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> node<span class="token punctuation">)</span><span class="token punctuation">)</span>
+       qsize <span class="token operator">=</span> <span class="token number">1</span>
+
+       <span class="token comment"># start beam search</span>
+       <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+           <span class="token comment"># give up when decoding takes too long</span>
+           <span class="token keyword">if</span> qsize <span class="token operator">&gt;</span> <span class="token number">2000</span><span class="token punctuation">:</span> <span class="token keyword">break</span>
+
+           <span class="token comment"># fetch the best node</span>
+           score<span class="token punctuation">,</span> n <span class="token operator">=</span> nodes<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+           decoder_input <span class="token operator">=</span> n<span class="token punctuation">.</span>wordid
+           decoder_hidden <span class="token operator">=</span> n<span class="token punctuation">.</span>h
+
+           <span class="token keyword">if</span> n<span class="token punctuation">.</span>wordid<span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> EOS_token <span class="token keyword">and</span> n<span class="token punctuation">.</span>prevNode <span class="token operator">!=</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+               endnodes<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">(</span>score<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span>
+               <span class="token comment"># if we reached maximum # of sentences required</span>
+               <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>endnodes<span class="token punctuation">)</span> <span class="token operator">&gt;=</span> number_required<span class="token punctuation">:</span>
+                   <span class="token keyword">break</span>
+               <span class="token keyword">else</span><span class="token punctuation">:</span>
+                   <span class="token keyword">continue</span>
+
+           <span class="token comment"># decode for one step using decoder</span>
+           decoder_output<span class="token punctuation">,</span> decoder_hidden <span class="token operator">=</span> decoder<span class="token punctuation">(</span>decoder_input<span class="token punctuation">,</span> decoder_hidden<span class="token punctuation">,</span> encoder_output<span class="token punctuation">)</span>
+
+           <span class="token comment"># PUT HERE REAL BEAM SEARCH OF TOP</span>
+           log_prob<span class="token punctuation">,</span> indexes <span class="token operator">=</span> torch<span class="token punctuation">.</span>topk<span class="token punctuation">(</span>decoder_output<span class="token punctuation">,</span> beam_width<span class="token punctuation">)</span>
+           nextnodes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+           <span class="token keyword">for</span> new_k <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>beam_width<span class="token punctuation">)</span><span class="token punctuation">:</span>
+               decoded_t <span class="token operator">=</span> indexes<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span>new_k<span class="token punctuation">]</span><span class="token punctuation">.</span>view<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+               log_p <span class="token operator">=</span> log_prob<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span>new_k<span class="token punctuation">]</span><span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+               node <span class="token operator">=</span> BeamSearchNode<span class="token punctuation">(</span>decoder_hidden<span class="token punctuation">,</span> n<span class="token punctuation">,</span> decoded_t<span class="token punctuation">,</span> n<span class="token punctuation">.</span>logp <span class="token operator">+</span> log_p<span class="token punctuation">,</span> n<span class="token punctuation">.</span>leng <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+               score <span class="token operator">=</span> <span class="token operator">-</span>node<span class="token punctuation">.</span><span class="token builtin">eval</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+               nextnodes<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">(</span>score<span class="token punctuation">,</span> node<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+           <span class="token comment"># put them into queue</span>
+           <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>nextnodes<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+               score<span class="token punctuation">,</span> nn <span class="token operator">=</span> nextnodes<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+               nodes<span class="token punctuation">.</span>put<span class="token punctuation">(</span><span class="token punctuation">(</span>score<span class="token punctuation">,</span> nn<span class="token punctuation">)</span><span class="token punctuation">)</span>
+               <span class="token comment"># increase qsize</span>
+           qsize <span class="token operator">+=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nextnodes<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
+
+       <span class="token comment"># choose nbest paths, back trace them</span>
+       <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>endnodes<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+           endnodes <span class="token operator">=</span> <span class="token punctuation">[</span>nodes<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>topk<span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+       utterances <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+       <span class="token keyword">for</span> score<span class="token punctuation">,</span> n <span class="token keyword">in</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>endnodes<span class="token punctuation">,</span> key<span class="token operator">=</span>operator<span class="token punctuation">.</span>itemgetter<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+           utterance <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+           utterance<span class="token punctuation">.</span>append<span class="token punctuation">(</span>n<span class="token punctuation">.</span>wordid<span class="token punctuation">)</span>
+           <span class="token comment"># back trace</span>
+           <span class="token keyword">while</span> n<span class="token punctuation">.</span>prevNode <span class="token operator">!=</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+               n <span class="token operator">=</span> n<span class="token punctuation">.</span>prevNode
+               utterance<span class="token punctuation">.</span>append<span class="token punctuation">(</span>n<span class="token punctuation">.</span>wordid<span class="token punctuation">)</span>
+
+           utterance <span class="token operator">=</span> utterance<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+           utterances<span class="token punctuation">.</span>append<span class="token punctuation">(</span>utterance<span class="token punctuation">)</span>
+
+       decoded_batch<span class="token punctuation">.</span>append<span class="token punctuation">(</span>utterances<span class="token punctuation">)</span>
+
+   <span class="token keyword">return</span> decoded_batch
+
+
+<span class="token keyword">def</span> <span class="token function">greedy_decode</span><span class="token punctuation">(</span>decoder_hidden<span class="token punctuation">,</span> encoder_outputs<span class="token punctuation">,</span> target_tensor<span class="token punctuation">)</span><span class="token punctuation">:</span>
+   <span class="token triple-quoted-string string">'''
+   :param target_tensor: target indexes tensor of shape [B, T] where B is the batch size and T is the maximum length of the output sentence
+   :param decoder_hidden: input tensor of shape [1, B, H] for start of the decoding
+   :param encoder_outputs: if you are using attention mechanism you can pass encoder outputs, [T, B, H] where T is the maximum length of input sentence
+   :return: decoded_batch
+   '''</span>
+
+   batch_size<span class="token punctuation">,</span> seq_len <span class="token operator">=</span> target_tensor<span class="token punctuation">.</span>size<span class="token punctuation">(</span><span class="token punctuation">)</span>
+   decoded_batch <span class="token operator">=</span> torch<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>batch_size<span class="token punctuation">,</span> MAX_LENGTH<span class="token punctuation">)</span><span class="token punctuation">)</span>
+   decoder_input <span class="token operator">=</span> torch<span class="token punctuation">.</span>LongTensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span>SOS_token<span class="token punctuation">]</span> <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>batch_size<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> device<span class="token operator">=</span>device<span class="token punctuation">)</span>
+
+   <span class="token keyword">for</span> t <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>MAX_LENGTH<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       decoder_output<span class="token punctuation">,</span> decoder_hidden <span class="token operator">=</span> decoder<span class="token punctuation">(</span>decoder_input<span class="token punctuation">,</span> decoder_hidden<span class="token punctuation">,</span> encoder_outputs<span class="token punctuation">)</span>
+
+       topv<span class="token punctuation">,</span> topi <span class="token operator">=</span> decoder_output<span class="token punctuation">.</span>data<span class="token punctuation">.</span>topk<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>  <span class="token comment"># get candidates</span>
+       topi <span class="token operator">=</span> topi<span class="token punctuation">.</span>view<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+       decoded_batch<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> t<span class="token punctuation">]</span> <span class="token operator">=</span> topi
+
+       decoder_input <span class="token operator">=</span> topi<span class="token punctuation">.</span>detach<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>view<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+
+   <span class="token keyword">return</span> decoded_batch
+
+</code></pre></div><p><a href="https://gitee.com/wwx_ruc/PyTorch-Beam-Search-Decoding/blob/master/decode_beam.py#" target="_blank" rel="noopener noreferrer">ref<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/wwx13/assets/js/app.5f87f3d6.js" defer></script><script src="/wwx13/assets/js/2.c594a943.js" defer></script><script src="/wwx13/assets/js/23.e772744d.js" defer></script>
+  </body>
+</html>
